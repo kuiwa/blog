@@ -14,7 +14,7 @@ So in order to make git ignore it, Go to : `cd .git/info/`
 
 You see there is a file called exclude. Fill it up with the files and directories you want it to ignore, just like the gist below:
 
-
+{% gist 7597812 %}
 
 And it is done. Now you never have to worry about your editor messing up your commits.
 

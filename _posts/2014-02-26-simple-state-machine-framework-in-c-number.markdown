@@ -153,5 +153,3 @@ And request a transition as shown below.
 ```
 
 And thats it. Your state machine is ready to handle transitions on the Service Ticket example entity.
-
-<a href="{{ site.baseurl }}/index.html">Go back</a>
