@@ -39,6 +39,16 @@ Start by creating an entity that represents a state.
     }
     
 ```
+chinese 
+
+```java
+	<groups>
+		<define name="csp">
+			<include name="robustness" />
+			<include name="stability" />
+		</define>
+	</groups>
+```
 
 Now, create a stateful entity by implementing <code>IStatefulEntity</code> interface. For exmaple:
 
