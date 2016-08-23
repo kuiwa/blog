@@ -51,7 +51,8 @@ public class MyTestB{
 ```
 
 Logger.java
-used for log printing with time mark.
+used for log printing with time mark.  
+
 ```
 package testng.helper;
 
@@ -72,6 +73,7 @@ public class Logger {
 }
 
 ```
+
 xml file:
 testGroups.xml
 
