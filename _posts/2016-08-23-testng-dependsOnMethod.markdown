@@ -60,7 +60,7 @@ import java.text.SimpleDateFormat;
 import org.testng.annotations.Test;
 
 public class Logger {
-//
+
     final private static SimpleDateFormat date_format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss:SS");
     
     public static void print(String message) {
