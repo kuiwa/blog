@@ -27,9 +27,11 @@ public class MyTest{
     }    
 }
 ```
+
 MyTestB.java
 
 ```
+
 package testng.groups;
 
 import org.testng.annotations.Test;
@@ -48,6 +50,7 @@ public class MyTestB{
         Logger.print("test logger");
     }
 }
+
 ```
 
 Logger.java

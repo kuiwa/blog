@@ -24,12 +24,12 @@ But there was an issue with this app, it used URLS to render the albums and spoi
 Here is the code to make it all work:
 
 ```python Facebook.py 
+
 from django.conf import settings
 from django.core.cache import cache
 import urllib2, urllib
 import django.utils.simplejson as json
 from django.template import defaultfilters
-
 
 fql_url = 'https://api.Facebook.com/method/fql.query'
 cache_expires = getattr(settings, 'CACHE_EXPIRES', 30)
@@ -65,6 +65,7 @@ def display_album(album_id):
         album = get_fql_result(fql)
         #album_detail = [item for item in valid_album]       
         return album
+		
 ```
 
 I asked user to enter the album ID and name, then rendered the album using the plugin here:
