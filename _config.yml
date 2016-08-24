@@ -1,5 +1,5 @@
 name: White Paper
-baseurl: ../blog
+baseurl: /blog
 highlighter: true
 url: http://vinitkumar.me/white-paper
 gems: [jekyll-paginate,  jekyll-gist]
