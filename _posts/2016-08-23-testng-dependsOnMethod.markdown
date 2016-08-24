@@ -5,6 +5,44 @@ date: 2016-08-23
 comments: true
 categories: 
 ---
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<style type="text/css">
+#customers
+  {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:100%;
+  border-collapse:collapse;
+  text-align:left;
+  }
+  
+#customers td, #customers th 
+  {
+  font-size:1em;
+  border:1px solid #98bf21;
+  padding:3px 7px 2px 7px;
+  text-align:left;
+  }
+
+#customers th 
+  {
+  font-size:1.1em;
+  text-align:left;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:#A7C942;
+  color:#ffffff;
+  }
+
+#customers tr.alt td 
+  {
+  color:#000000;
+  background-color:#EAF2D3;
+  }
+</style>
+</head>
+
 Java files as below:
 
 MyTest.java
