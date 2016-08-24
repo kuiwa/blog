@@ -56,43 +56,43 @@ Here is a quick overview of the annotations available in TestNG along with their
 	</tr>
 	<tr>
         <th colspan="2">@BeforeGroups</th>
-		<td>The list of groups that this configuration method will run before. This method is guaranteed to run shortly before the first test method that belongs to any of these groups is invoked. </td>
+		<td> 	被配置的方法将在列表中的组运行前运行。这个方法保证在属于这些组的第一个测试方法调用前立即执行. </td>
 	</tr>
 	<tr>
         <th colspan="2">@BeforeClass</th>
-		<td>The annotated method will be run before the first test method in the current class is invoked. </td>
+		<td>被注解的方法将在当前类的第一个测试方法被调用前运行. </td>
 	</tr>
 	<tr>
         <th colspan="2">@BeforeMethod</th>
-		<td>The annotated method will be run before each test method. </td>
+		<td>被注解的方法将在每个测试方法运行前运行. </td>
 	</tr>
 	<tr>
         <th colspan="2">@AfterMethod</th>
-		<td>The annotated method will be run after each test method. </td>
+		<td>被注解的方法将在每个测试方法运行后运行. </td>
 	</tr>
 	<tr>
         <th colspan="2">@AfterClass</th>
-		<td>The annotated method will be run after all the test methods in the current class have been run.</td>
+		<td>被注解的方法将在当前类的所有测试方法运行后运行.</td>
 	</tr>
 	<tr>
         <th colspan="2">@AfterGroups</th>
-		<td>The list of groups that this configuration method will run after. This method is guaranteed to run shortly after the last test method that belongs to any of these groups is invoked. </td>
+		<td>被配置的方法将在列表中的组运行后运行。这个方法保证在属于这些组的所有测试方法调用后立即执行. </td>
 	</tr>
 	<tr>
         <th colspan="2">@AfterTest</th>
-		<td>The annotated method will be run after all the test methods belonging to the classes inside the <test> tag have run. </td>
+		<td>被注解的方法将在测试运行后运行. </td>
 	</tr>
 	<tr>
         <th colspan="2">@AfterSuite</th>
-		<td>The annotated method will be run after all tests in this suite have run. </td>
+		<td>被注解的方法将在本套件所有测试运行后运行. </td>
 	</tr>
 	
 	<tr>
 		<td></td>
 		<td><tt>alwaysRun</tt></td>
-		<td>For before methods (beforeSuite, beforeTest, beforeTestClass and beforeTestMethod, but not beforeGroups): If set to true, this configuration method will be run regardless of what groups it belongs to.
+		<td>对于每个before方法(beforeSuite, beforeTest, beforeTestClass和beforeTestMethod, 但不包括 beforeGroups): 如果设置为true, 被配置的方法将总是运行而不管它属于哪个组.
 		<br>
-		For after methods (afterSuite, afterClass, ...): If set to true, this configuration method will be run even if one or more methods invoked previously failed or was skipped. </td>
+		对于after方法(afterSuite, afterClass, …):如果设置为true, 被配置的方法将总是运行，即使一个或多个先前调用的方法失败或被忽略.</td>
 	</tr>
 	<tr>
 	<td>
@@ -101,7 +101,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>dependsOnGroups</tt>
 	</td>
 	<td>
-			  The list of groups this method depends on.
+			  本方法所依赖的组列表.
 	</td>
 	</tr>
 
@@ -112,7 +112,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>dependsOnMethods</tt>
 	</td>
 	<td>
-			  The list of methods this method depends on.
+			  本方法所依赖的方法列表.
 	</td>
 	</tr>
 
@@ -123,7 +123,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>enabled</tt>
 	</td>
 	<td>
-			  Whether methods on this class/method are enabled.
+			  本类的所有方法或本方法是否激活.
 	</td>
 	</tr>
 
@@ -134,7 +134,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>groups</tt>
 	</td>
 	<td>
-			  The list of groups this class/method belongs to.
+			  本类或本方法所属的组列表.
 	</td>
 	</tr>
 
@@ -145,7 +145,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>inheritGroups</tt>
 	</td>
 	<td>
-			  If true, this method will belong to groups specified in the @Test annotation at the class level.
+			  如果设置为true,本方法将属于在类级别被@Test注解指定的组.
 	</td>
 	</tr>
 	
@@ -222,7 +222,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>alwaysRun</tt>
 	</td>
 	<td>
-			  If set to true, this test method will always be run even if it depends on a method that failed.
+			  如果设置为true,本方法将总是运行，即使它所依赖的方法失败.
 	</td>
 	</tr>
 
@@ -233,7 +233,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>dataProvider</tt>
 	</td>
 	<td>
-	The name of the data provider for this test method.
+	为本方法所用的数据供应者名称.
 	</td>
 	</tr>
 
@@ -245,7 +245,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>dataProviderClass</tt>
 	</td>
 	<td>
-	The class where to look for the data provider.  If not specified, the data provider will be looked on the class of the current test method or one of its base classes. If this attribute is specified, the data provider method needs to be static on the specified class.  
+	用于查找数据供应者的类。如果不指定，将在当前测试方法所在的类或者它的基类上查找数据供应者。如果指定了这个属性, 则在指定类中数据供应者应该是静态(static)方法.  
 	</td>
 	</tr>
 
@@ -261,7 +261,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>dependsOnGroups</tt>
 	</td>
 	<td>
-			  The list of groups this method depends on.
+			  本方法所依赖的组列表.
 	</td>
 	</tr>
 
@@ -272,7 +272,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>dependsOnMethods</tt>
 	</td>
 	<td>
-			  The list of methods this method depends on.
+			  本方法所依赖的方法列表.
 	</td>
 	</tr>
 
@@ -283,7 +283,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>description</tt>
 	</td>
 	<td>
-			  The description for this method.
+			  本方法的描述.
 	</td>
 	</tr>
 
@@ -294,7 +294,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>enabled</tt>
 	</td>
 	<td>
-			  Whether methods on this class/method are enabled.
+			  本类的所有方法或本方法是否被激活.
 	</td>
 	</tr>
 
@@ -305,7 +305,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>expectedExceptions</tt>
 	</td>
 	<td>
-			   The list of exceptions that a test method is expected to throw.  If no exception or a different than one on this list is thrown, this test will be marked a failure.
+			   测试方法所期望抛出的异常列表。如果没有异常或者抛出的异常不在列表中，本方法将标记为失败.
 	</td>
 	</tr>
 
@@ -316,7 +316,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>groups</tt>
 	</td>
 	<td>
-			  The list of groups this class/method belongs to.
+			  本类或方法所属的组列表.
 	</td>
 	</tr>
 
@@ -327,7 +327,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>invocationCount</tt>
 	</td>
 	<td>
-			  The number of times this method should be invoked.
+			  本方法应该被调用的次数.
 	</td>
 	</tr>
 
@@ -349,7 +349,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>priority</tt>
 	</td>
 	<td>
-			  The priority for this test method. Lower priorities will be scheduled first.
+			  测试方法的优先级，数字越低的越先执行.
 	</td>
 	</tr>
 
@@ -361,7 +361,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>successPercentage</tt>
 	</td>
 	<td>
-			  The percentage of success expected from this method
+			  本方法期望的成功率.
 	</td>
 	</tr>
 
@@ -376,6 +376,18 @@ Here is a quick overview of the annotations available in TestNG along with their
 
 	</td>
 	</tr>
+	
+	<tr>
+	<td>
+	</td>
+	<td>
+	<tt>sequential</tt>
+	</td>
+	<td>
+				 如果设置为true，本测试类的所有方法保证按照顺序运行，即使这些测试运行在parallel=”true”的情况下。这个属性仅用于类级别，如果用于方法级别将被忽略.
+
+	</td>
+	</tr>
 
 	<tr>
 	<td>
@@ -384,7 +396,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>timeOut</tt>
 	</td>
 	<td>
-			  The maximum number of milliseconds this test should take.
+			  本测试应该执行的最大时间，单位为毫秒.
 	</td>
 	</tr>
 
@@ -395,9 +407,7 @@ Here is a quick overview of the annotations available in TestNG along with their
 	<tt>threadPoolSize</tt>
 	</td>
 	<td>
-				 The size of the thread pool for this method.  
-	The method will be invoked from multiple threads as specified by 
-	invocationCount. <br>Note:  this attribute is ignored if invocationCount is not specified
+				 本方法的线程池大小，方法将被多线程调用，次数由invocationCount指定。注：如果invocationCount未指定，则这个属性将被忽略
 
 	</td>
 	</tr>
