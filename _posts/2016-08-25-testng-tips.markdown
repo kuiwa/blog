@@ -32,12 +32,29 @@ categories:
 <ol>
 <li>Hard dependencies</li>
 	<ul>
+	依赖的所有方法全部都成功执行后才会执行，如果有至少一个依赖失败，当前类或方法会被在报告中标记为<b>SKIP<b>。
+	</ul>
+	<ul>
+	alwaysRun=false
+	</ul>
+	<ul>
+	支持dependsOnMethods和dependsOnGroups：
+	```java
+	@Test(dependsOnMethods = { "serverStartedOk" })
+	public void method1() {}
+	@Test(dependsOnGroups = { "init.*" })
+	public void method2() {}
+	```
+	
+	</ul>
+
+<li>Soft dependencies</li>
+	<ul>
 	依赖的所有方法全部都成功执行后才会执行，如果有至少一个依赖失败，当前类或方法会被在报告中标记为SKIP。
 	</ul>
 	<ul>
 	@Test(dependsOnMethods = { "serverStartedOk" })
-	</ul>
-
+	</ul>	
 </ol>
 
 
