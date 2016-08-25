@@ -50,27 +50,6 @@ categories:
 	<ul>给index.html添加翻页功能</ul>
 
 </div>
-
-MyTest.java
-
-```java
-package testng.groups;
-
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-
-import testng.helper.Logger;
-
-public class MyTest{
-
-    @Test(groups = {"group3", "group2"}, dependsOnGroups = {"group4"})
-    @Parameters({"group1A"})
-    public void testGroup1A(String group1A) {
-        Logger.print("This is testGroup1A.");
-        Logger.print(group1A);
-    }    
-}
-```
 	
 	将如下内容加入index.html：
 	
