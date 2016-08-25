@@ -17,7 +17,7 @@ categories:
 		font-size:0.9em;
 		line-height:1.5;
 		}
-	#customers ul
+	#myul
 		{
 		list-style-type: disc;
 		list-style-position: inside;		
@@ -32,7 +32,7 @@ categories:
 
 <ol>
 <li>首先需要在GitHub上建立一个拥有gh-pages分支的repository，大致步骤如下：</li>
-	<ul>a.注册GitHub的账号</ul>
+	<ul id="myul">a.注册GitHub的账号</ul>
 	<ul>b.在GitHub上新建一个repository目录</ul>
 	<ul>c.在新建的repository目录下新建一个gh-pages分支</ul>
 	<ul>d.将repository clone到本地</ul>
@@ -48,5 +48,4 @@ categories:
 	<ul><a href="http://jekyllthemes.org/themes/white-paper/">WhitePaper</a></ul>
 	<ul>直接覆盖当前gh-pages分支下的内容，上传即可</ul>
 	<ul>如果github的repository的名字不是whitepaper则可能出错，在header.html中修改下</ul>
-</li>
 </div>
