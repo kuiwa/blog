@@ -39,12 +39,11 @@ categories:
 	</ul>
 	<ul>
 	支持dependsOnMethods和dependsOnGroups：
-	```java
-	@Test(dependsOnMethods = { "serverStartedOk" })
+	>@Test(dependsOnMethods = { "serverStartedOk" })
 	public void method1() {}
 	@Test(dependsOnGroups = { "init.*" })
 	public void method2() {}
-	```
+	>
 	
 	</ul>
 
