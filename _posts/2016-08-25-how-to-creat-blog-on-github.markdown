@@ -56,7 +56,7 @@ categories:
 ```html
 
 <ul><code><div class="listing">
-{% if paginator.total_pages > 1 %}
+	{% if paginator.total_pages > 1 %}
 {% for post in paginator.posts %}
 <div class="post other link">
   <h2><span class="mega-octicon octicon-flame" style type="min-width: 32px;"></span><a href="/blog{{post.url}}">{{ post.title }}</a></h2>
