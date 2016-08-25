@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "My TestNG Tips"
 date: 2016-08-25
