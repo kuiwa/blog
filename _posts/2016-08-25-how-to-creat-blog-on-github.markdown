@@ -46,6 +46,41 @@ categories:
 <li>构建自己的页面，直接复制现有的模板即可</li>
 	<ul><a href="http://jekyllthemes.org/">模板链接</a></ul>
 	<ul><a href="http://jekyllthemes.org/themes/white-paper/">WhitePaper</a></ul>
-	<ul>直接覆盖当前gh-pages分支下的内容，上传即可</ul>
-	<ul>如果github的repository的名字不是whitepaper则可能出错，在header.html中修改下</ul>
+	<ul>直接覆盖当前gh-pages分支下的内容，上传即可</ul>	<ul>如果github的repository的名字不是whitepaper则可能出错，在header.html和index.html中修改下，将/whitepaper改为/yourRepoName</ul>
+	<ul>给index.html添加翻页功能
+	
+	```html
+		<ul><code><div class="listing">
+	{% if paginator.total_pages > 1 %}
+    {% for post in paginator.posts %}
+    <div class="post other link">
+      <h2><span class="mega-octicon octicon-flame" style type="min-width: 32px;"></span><a href="/blog{{post.url}}">{{ post.title }}</a></h2>
+      <p class="post-date">{{ post.date | date_to_string }}</p>
+
+      <p>{{ post.excerpt }}</p>
+    </div>
+    {% endfor %}
+	{% endif %}
+	
+	{% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"Previous</a>
+	{% endif %}
+	
+	{% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="active">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+{% endfor %}
+
+{% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
+{% endif %}
+```
+
+</ul>
+
 </div>
