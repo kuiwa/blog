@@ -16,7 +16,7 @@ categories:
 	  border-collapse:collapse;
 	  text-align:left;
 	  font-size:1em;
-	  line-height:12px
+	  line-height:18px;
 	  }
 	</style>
 </head>
