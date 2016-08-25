@@ -53,7 +53,13 @@ categories:
 	
 	index.html 如下：
 	
-```html
+```java
+package testng.groups;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import testng.helper.Logger;
 
 <ul><code><div class="listing">
 	{% if paginator.total_pages > 1 %}
