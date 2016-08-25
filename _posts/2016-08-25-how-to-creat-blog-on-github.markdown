@@ -51,27 +51,9 @@ categories:
 
 </div>
 	
-	index.html 如下：
+	将如下内容加入index.html：
 	
-```java
-package testng.groups;
-
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-
-import testng.helper.Logger;
-
-<ul><code><div class="listing">
-	{% if paginator.total_pages > 1 %}
-{% for post in paginator.posts %}
-<div class="post other link">
-  <h2><span class="mega-octicon octicon-flame" style type="min-width: 32px;"></span><a href="/blog{{post.url}}">{{ post.title }}</a></h2>
-  <p class="post-date">{{ post.date | date_to_string }}</p>
-
-  <p>{{ post.excerpt }}</p>
-</div>
-{% endfor %}
-{% endif %}
+```html
 
 {% if paginator.previous_page %}
 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"Previous</a>
