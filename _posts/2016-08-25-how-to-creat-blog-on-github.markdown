@@ -15,8 +15,8 @@ categories:
 	  width:100%;
 	  border-collapse:collapse;
 	  text-align:left;
-	  font-size:1.1em;
-	  line-height:300%
+	  font-size:1em;
+	  line-height:18px
 	  }
 	</style>
 </head>
