@@ -53,8 +53,7 @@ categories:
 	
 	将如下内容加入index.html：
 	
-```java
-
+```
 {% if paginator.previous_page %}
 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"Previous</a>
 {% endif %}
