@@ -43,7 +43,7 @@ categories:
 </style>
 </head>
 
-Java files as below: code with utf-8 中文输入
+Java files as below:
 
 MyTest.java
 
