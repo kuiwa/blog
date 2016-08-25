@@ -51,32 +51,34 @@ categories:
 
 </div>
 	
-	```html
+	index.html 如下：
 	
-		<ul><code><div class="listing">
-	{% if paginator.total_pages > 1 %}
-    {% for post in paginator.posts %}
-    <div class="post other link">
-      <h2><span class="mega-octicon octicon-flame" style type="min-width: 32px;"></span><a href="/blog{{post.url}}">{{ post.title }}</a></h2>
-      <p class="post-date">{{ post.date | date_to_string }}</p>
+```html
 
-      <p>{{ post.excerpt }}</p>
-    </div>
-    {% endfor %}
-	{% endif %}
-	
-	{% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"Previous</a>
-	{% endif %}
-	
-	{% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="active">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
+<ul><code><div class="listing">
+{% if paginator.total_pages > 1 %}
+{% for post in paginator.posts %}
+<div class="post other link">
+  <h2><span class="mega-octicon octicon-flame" style type="min-width: 32px;"></span><a href="/blog{{post.url}}">{{ post.title }}</a></h2>
+  <p class="post-date">{{ post.date | date_to_string }}</p>
+
+  <p>{{ post.excerpt }}</p>
+</div>
+{% endfor %}
+{% endif %}
+
+{% if paginator.previous_page %}
+<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"Previous</a>
+{% endif %}
+
+{% for page in (1..paginator.total_pages) %}
+{% if page == paginator.page %}
+  <span class="active">{{ page }}</span>
+{% elsif page == 1 %}
+  <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+{% else %}
+  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+{% endif %}
 {% endfor %}
 
 {% if paginator.next_page %}
