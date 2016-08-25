@@ -15,7 +15,7 @@ categories:
 	  width:100%;
 	  text-align:left;
 	  font-size:1.1em;
-	  line-height:3;
+	  line-height:150%;
 	  }
 	</style>
 </head>
