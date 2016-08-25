@@ -48,6 +48,8 @@ categories:
 	<ul><a href="http://jekyllthemes.org/themes/white-paper/">WhitePaper</a></ul>
 	<ul>直接覆盖当前gh-pages分支下的内容，上传即可</ul>	<ul>如果github的repository的名字不是whitepaper则可能出错，在header.html和index.html中修改下，将/whitepaper改为/yourRepoName</ul>
 	<ul>给index.html添加翻页功能</ul>
+
+</div>
 	
 	```html
 	
@@ -81,5 +83,3 @@ categories:
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
 {% endif %}
 ```
-
-</div>
