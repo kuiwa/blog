@@ -17,9 +17,10 @@ categories:
 		font-size:0.9em;
 		line-height:1.5;
 		}
-	#myli
+	#myul ul
 		{
-		list-style-type: disc;		
+		list-style-type: disc;
+		list-style-position: inside;		
 		}
 	</style>
 </head>
@@ -30,7 +31,7 @@ categories:
 <li><a href="http://www.pchou.info/ssgithubPage/2013-01-03-build-github-blog-page-01.html"> 一步步在GitHub上创建博客主页</a></li>
 
 <ol>
-<li id="myli">首先需要在GitHub上建立一个拥有gh-pages分支的repository，大致步骤如下：</li>
+<li>首先需要在GitHub上建立一个拥有gh-pages分支的repository，大致步骤如下：</li>
 	<ul>a.注册GitHub的账号</ul>
 	<ul>b.在GitHub上新建一个repository目录</ul>
 	<ul>c.在新建的repository目录下新建一个gh-pages分支</ul>
