@@ -14,7 +14,7 @@ categories:
 	  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	  width:100%;
 	  text-align:left;
-	  font-size:0.75em;
+	  font-size:0.9em;
 	  line-height:1.5;
 	  }
 	</style>
