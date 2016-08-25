@@ -10,13 +10,17 @@ categories:
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<style type="text/css">
 	#customers
-	  {
-	  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	  width:100%;
-	  text-align:left;
-	  font-size:0.9em;
-	  line-height:1.5;
-	  }
+		{
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		width:100%;
+		text-align:left;
+		font-size:0.9em;
+		line-height:1.5;
+		}
+	#myli
+		{
+		list-style-type: disc;		
+		}
 	</style>
 </head>
 
@@ -37,4 +41,11 @@ categories:
 <a href="http://www.pchou.info/ssgithubPage/2013-01-05-build-github-blog-page-02.html"> 一步步在GitHub上创建博客主页(2)</a>
 
 </ol>
+
+<li>构建自己的页面，直接复制现有的模板即可</li>
+	<ul><a href="http://jekyllthemes.org/">模板链接</a></ul>
+	<ul><a href="http://jekyllthemes.org/themes/white-paper/">WhitePaper</a></ul>
+	<ul>直接覆盖当前gh-pages分支下的内容，上传即可</ul>
+	<ul>如果github的repository的名字不是whitepaper则可能出错，在header.html中修改下</ul>
+</li>
 </div>
