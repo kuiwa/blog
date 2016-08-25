@@ -17,7 +17,7 @@ categories:
 		font-size:0.9em;
 		line-height:1.5;
 		}
-	#myul
+	ul
 		{
 		list-style-type: disc;
 		list-style-position: inside;		
