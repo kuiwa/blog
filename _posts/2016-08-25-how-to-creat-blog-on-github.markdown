@@ -13,7 +13,6 @@ categories:
 	  {
 	  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	  width:100%;
-	  border-collapse:collapse;
 	  text-align:left;
 	  font-size:1.1em;
 	  line-height:18px;
