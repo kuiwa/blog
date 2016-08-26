@@ -83,7 +83,6 @@ categories:
 	</ul>
 	<ul>
 	<pre class="brush: xml">
-	  &lt;test name="My suite"&gt;
 	&lt;!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" &gt;
 	&lt;suite name="testNgSuite" &gt;
 		&lt;test name="Test dependencies" &gt;
@@ -98,8 +97,7 @@ categories:
 			&lt;/groups&gt;
 			
 			&lt;classes&gt;
-				&lt;class name="testng.groups.MyTestB"&gt;
-				&lt;/class&gt;
+				&lt;class name="testng.groups.MyTestB" /&gt;
 			&lt;/classes&gt;
 		&lt;/test&gt;
 	&lt;/suite&gt;
