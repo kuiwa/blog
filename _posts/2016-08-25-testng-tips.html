@@ -50,13 +50,9 @@ date: "2016-08-25"
 <ol>
 <li>Hard dependencies</li>
 	<ul>
-	依赖的所有方法全部都成功执行后才会执行，如果有至少一个依赖失败，当前类或方法会被在报告中标记为<b>SKIP</b>。
-
-	<ul>
-	alwaysRun=false
-
-	<ul>
-	支持dependsOnMethods和dependsOnGroups, 如下例：
+	<li>依赖的所有方法全部都成功执行后才会执行，如果有至少一个依赖失败，当前类或方法会被在报告中标记为<b>SKIP</b>。
+	<li>alwaysRun=false
+	<li>支持dependsOnMethods和dependsOnGroups, 如下例：
 	
 	<pre class="brush: java">
 	@Test
