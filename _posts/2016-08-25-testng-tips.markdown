@@ -116,7 +116,7 @@ categories:
 	  <li><tt>IMethodInterceptor</tt> (<a href="#methodinterceptors">doc</a>, <a href="../javadocs/org/testng/IMethodInterceptor.html">javadoc</a>)
 	  <li><tt>IReporter</tt> (<a href="#logging-reporters">doc</a>, <a href="../javadocs/org/testng/IReporter.html">javadoc</a>)
 	  <li><tt>ISuiteListener</tt> (doc, <a href="../javadocs/org/testng/ISuiteListener.html">javadoc</a>)
-	  <li><tt>ITestListener</tt> (<a href="#logging-listeners">doc</a>, <a href="../javadocs/org/testng/ITestListener.html">javadoc</a>)
+	  <li><tt>ITestListener</tt> (<a href="#logging-listeners">doc</a>, <a href="../javadocs/org/testng/ITestListener.html">javadoc</a>)</li>
 	</ul>
 
 </ol>
