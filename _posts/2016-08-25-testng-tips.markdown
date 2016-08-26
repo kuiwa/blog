@@ -38,30 +38,17 @@ categories:
 	alwaysRun=false
 	</ul>
 	<ul>
-	支持dependsOnMethods和dependsOnGroups：
+	支持dependsOnMethods和dependsOnGroups, 如下例：
 	
-Here is an example of a hard dependency:
+	<pre class="brush: java">
+	@Test
+	public void serverStartedOk() {}
 
-<pre class="brush: java">
-@Test
-public void serverStartedOk() {}
-
-@Test(dependsOnMethods = { "serverStartedOk" })
-public void method1() {}
-</pre>
+	@Test(dependsOnMethods = { "serverStartedOk" })
+	public void method1() {}
+	</pre>
 	
 	</ul>
-	
-Here is an example of a hard dependency:
-
-<pre class="brush: java">
-@Test
-public void serverStartedOk() {}
-
-@Test(dependsOnMethods = { "serverStartedOk" })
-public void method1() {}
-</pre>
-
 <li>Soft dependencies</li>
 	<ul>
 	依赖的所有方法全部都成功执行后才会执行，如果有至少一个依赖失败，当前类或方法会被在报告中标记为SKIP。
@@ -69,35 +56,6 @@ public void method1() {}
 	<ul>
 	@Test(dependsOnMethods = { "serverStartedOk" })
 	</ul>	
-	Here is an example of a hard dependency:
-
-<pre class="brush: java">
-@Test
-public void serverStartedOk() {}
-
-@Test(dependsOnMethods = { "serverStartedOk" })
-public void method1() {}
 </pre>
 </ol>
-
-Here is an example of a hard dependency:
-
-<pre class="brush: java">
-@Test
-public void serverStartedOk() {}
-
-@Test(dependsOnMethods = { "serverStartedOk" })
-public void method1() {}
-</pre>
-
 </div>	
-	my
-	
-```java  
-	
-@Test(dependsOnMethods = { "serverStartedOk" })
-public void method1() {}
-@Test(dependsOnGroups = { "init.*" })
-public void method2() {}
-
-```
