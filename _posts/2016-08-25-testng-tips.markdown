@@ -59,7 +59,23 @@ categories:
 	@Test(dependsOnMethods = { "serverStartedOk" })
 	</ul>	
 </ol>
-
-
+	java
+	```java  
+	
+	@Test(dependsOnMethods = { "serverStartedOk" })
+	public void method1() {}
+	@Test(dependsOnGroups = { "init.*" })
+	public void method2() {}
+	
+	```
 
 </div>	
+	java
+	```java  
+	
+	@Test(dependsOnMethods = { "serverStartedOk" })
+	public void method1() {}
+	@Test(dependsOnGroups = { "init.*" })
+	public void method2() {}
+	
+	```
