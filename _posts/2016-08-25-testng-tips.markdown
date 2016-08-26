@@ -40,25 +40,27 @@ categories:
 	<ul>
 	支持dependsOnMethods和dependsOnGroups：
 	
-```java  
+Here is an example of a hard dependency:
+
+<pre class="brush: java">
+@Test
+public void serverStartedOk() {}
 
 @Test(dependsOnMethods = { "serverStartedOk" })
 public void method1() {}
-@Test(dependsOnGroups = { "init.*" })
-public void method2() {}
-
-```
+</pre>
 	
 	</ul>
 	
-```java  
+Here is an example of a hard dependency:
+
+<pre class="brush: java">
+@Test
+public void serverStartedOk() {}
 
 @Test(dependsOnMethods = { "serverStartedOk" })
 public void method1() {}
-@Test(dependsOnGroups = { "init.*" })
-public void method2() {}
-
-```
+</pre>
 
 <li>Soft dependencies</li>
 	<ul>
@@ -68,16 +70,16 @@ public void method2() {}
 	@Test(dependsOnMethods = { "serverStartedOk" })
 	</ul>	
 </ol>
-	my
-	
-	```java  
-	
-	@Test(dependsOnMethods = { "serverStartedOk" })
-	public void method1() {}
-	@Test(dependsOnGroups = { "init.*" })
-	public void method2() {}
-	
-	```
+
+Here is an example of a hard dependency:
+
+<pre class="brush: java">
+@Test
+public void serverStartedOk() {}
+
+@Test(dependsOnMethods = { "serverStartedOk" })
+public void method1() {}
+</pre>
 
 </div>	
 	my
