@@ -78,7 +78,7 @@ categories:
 
 <li>Dependencies in XML</li>
 	<ul>
-	注：Groups中一共包括<define><run><dependencies>三个子菜单，亲身体验是define和dependencies放在一起的时候，dependencies不生效，也就是两个最好不要同时用。而且define或dependencies最好和run一起使用，参照下例
+	注：Groups中一共包括define/run/dependencies三个子菜单，亲身体验是define和dependencies放在一起的时候，dependencies不生效，也就是两个最好不要同时用。而且define或dependencies最好和run一起使用，参照下例:
 	</ul>
 	<ul>
 	alwaysRun=true
