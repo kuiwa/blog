@@ -59,7 +59,7 @@ categories:
 	<ul>
 	支持dependsOnMethods和dependsOnGroups, 如下例：
 	
-	<pre">
+	<pre class="brush: java">
 	@Test
 	public void serverStartedOk() {}
 
@@ -70,10 +70,30 @@ categories:
 	</ul>
 <li>Soft dependencies</li>
 	<ul>
-	依赖的所有方法全部都成功执行后才会执行，如果有至少一个依赖失败，当前类或方法会被在报告中标记为SKIP。
+	不管依赖的方法是否都成功执行，始终会执行当前类或方法。
 	</ul>
 	<ul>
+	alwaysRun=true
+	<ul>
 	@Test(dependsOnMethods = { "serverStartedOk" })
+	</ul>
+<li>Dependencies in XML</li>
+	<ul>
+	不管依赖的方法是否都成功执行，始终会执行当前类或方法。
+	</ul>
+	<ul>
+	alwaysRun=true
+	<ul>
+	<pre class="brush: xml">
+	  &lt;test name="My suite"&gt;
+		&lt;groups&gt;
+		  &lt;dependencies&gt;
+			&lt;group name="c" depends-on="a  b" /&gt;
+			&lt;group name="z" depends-on="c" /&gt;
+		  &lt;/dependencies&gt;
+		&lt;/groups&gt;
+	  &lt;/test&gt;
+	</pre>
 	</ul>	
 </ol>
 </div>	
