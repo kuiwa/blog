@@ -105,6 +105,6 @@ categories:
 		&lt;/test&gt;
 	&lt;/suite&gt;
 	</pre>
-	</ul>	
+	</ul>
 </ol>
 </div>	
