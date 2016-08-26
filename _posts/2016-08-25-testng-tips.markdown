@@ -69,6 +69,15 @@ public void method1() {}
 	<ul>
 	@Test(dependsOnMethods = { "serverStartedOk" })
 	</ul>	
+	Here is an example of a hard dependency:
+
+<pre class="brush: java">
+@Test
+public void serverStartedOk() {}
+
+@Test(dependsOnMethods = { "serverStartedOk" })
+public void method1() {}
+</pre>
 </ol>
 
 Here is an example of a hard dependency:
