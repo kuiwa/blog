@@ -59,7 +59,7 @@ categories:
 	<ul>
 	支持dependsOnMethods和dependsOnGroups, 如下例：
 	
-	<pre class="brush: java">
+	<pre">
 	@Test
 	public void serverStartedOk() {}
 
@@ -75,6 +75,5 @@ categories:
 	<ul>
 	@Test(dependsOnMethods = { "serverStartedOk" })
 	</ul>	
-</pre>
 </ol>
 </div>	
