@@ -82,6 +82,7 @@ categories:
 	</ul>
 	<ul>
 	alwaysRun=true
+	</ul>
 	<ul>
 	<pre class="brush: xml">
 	  &lt;test name="My suite"&gt;
