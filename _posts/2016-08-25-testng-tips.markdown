@@ -75,6 +75,7 @@ categories:
 	</ul>
 	<ul>
 	alwaysRun=true
+	</ul>
 
 <li>Dependencies in XML</li>
 	<ul>
