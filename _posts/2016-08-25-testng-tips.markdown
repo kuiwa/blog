@@ -68,31 +68,42 @@ categories:
 	</pre>
 	
 	</ul>
+	
 <li>Soft dependencies</li>
 	<ul>
 	不管依赖的方法是否都成功执行，始终会执行当前类或方法。
 	</ul>
 	<ul>
 	alwaysRun=true
-	<ul>
-	@Test(dependsOnMethods = { "serverStartedOk" })
-	</ul>
+
 <li>Dependencies in XML</li>
 	<ul>
-	不管依赖的方法是否都成功执行，始终会执行当前类或方法。
+	注：Groups中一共包括<define><run><dependencies>三个子菜单，亲身体验是define和dependencies放在一起的时候，dependencies不生效，也就是两个最好不要同时用。而且define或dependencies最好和run一起使用，参照下例
 	</ul>
 	<ul>
 	alwaysRun=true
 	<ul>
 	<pre class="brush: xml">
 	  &lt;test name="My suite"&gt;
-		&lt;groups&gt;
-		  &lt;dependencies&gt;
-			&lt;group name="c" depends-on="a  b" /&gt;
-			&lt;group name="z" depends-on="c" /&gt;
-		  &lt;/dependencies&gt;
-		&lt;/groups&gt;
-	  &lt;/test&gt;
+	&lt;!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" &gt;
+	&lt;suite name="testNgSuite" &gt;
+		&lt;test name="Test dependencies" &gt;
+			&lt;groups&gt;
+				&lt;run&gt;
+					&lt;include name="group7" /&gt;
+				&lt;/run&gt;
+				&lt;dependencies&gt;
+					&lt;group name="group5" depends-on="group2 group4" /&gt;
+					&lt;group name="group7" depends-on="group5 group6" /&gt;
+				&lt;/dependencies&gt;
+			&lt;/groups&gt;
+			
+			&lt;classes&gt;
+				&lt;class name="testng.groups.MyTestB"&gt;
+				&lt;/class&gt;
+			&lt;/classes&gt;
+		&lt;/test&gt;
+	&lt;/suite&gt;
 	</pre>
 	</ul>	
 </ol>
