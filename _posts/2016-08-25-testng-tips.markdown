@@ -50,6 +50,15 @@ public void method2() {}
 ```
 	
 	</ul>
+	
+```java  
+
+@Test(dependsOnMethods = { "serverStartedOk" })
+public void method1() {}
+@Test(dependsOnGroups = { "init.*" })
+public void method2() {}
+
+```
 
 <li>Soft dependencies</li>
 	<ul>
