@@ -8,6 +8,25 @@ categories:
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	 <link rel="stylesheet" href="testng.css" type="text/css" />
+        <link type="text/css" rel="stylesheet" href="http://beust.com/beust.css"  />
+        <script type="text/javascript" src="banner.js"></script>
+
+      <script type="text/javascript" src="http://beust.com/scripts/shCore.js"></script>
+      <script type="text/javascript" src="http://beust.com/scripts/shBrushJava.js"></script>
+      <script type="text/javascript" src="http://beust.com/scripts/shBrushXml.js"></script>
+      <script type="text/javascript" src="http://beust.com/scripts/shBrushBash.js"></script>
+      <script type="text/javascript" src="http://beust.com/scripts/shBrushPlain.js"></script>
+      <link type="text/css" rel="stylesheet" href="http://beust.com/styles/shCore.css"/>
+      <link type="text/css" rel="stylesheet" href="http://beust.com/styles/shThemeCedric.css"/>
+      <script type="text/javascript">
+        SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+        SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.all();
+      </script>
+      <script type="text/javascript" src="http://beust.com/toc.js"></script>
+	  
 	<style type="text/css">
 	#customers
 		{
